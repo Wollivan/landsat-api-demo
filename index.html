@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landsat Imagery</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <h1>API Fun!</h1>
+    <p>
+      This app uses NASA's
+      <a
+        >Earth API to get Landsat (a satelletie that collects light reflected by
+        the land) imagery based on latitude, longitude, date and dimensions.</a
+      >
+    </p>
+    <div class="wrap">
+      <div class="controls-wrap">
+        <form class="controls">
+          <label>Lat</label>
+          <input type="number" name="lat" value="52.63" step="0.01" />
+          <label>Lon</label>
+          <input type="number" name="lon" value="1.29" step="0.01" />
+          <label>Date</label>
+          <input type="date" name="theDate" value="2018-01-01" />
+          <label>Dim</label>
+          <input type="number" name="dim" value="0.025" step="0.005" />
+          <button>Go!</button>
+        </form>
+      </div>
+      <div class="img-container">
+        <div class="loading hidden">Loading image from satellite data</div>
+        <img />
+      </div>
+    </div>
+  </body>
+</html>
