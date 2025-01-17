@@ -5,7 +5,7 @@ const api_key = "C0bJ5f1kNkzkcjZ0HVWI2Gq3T98aYh6PkcPvp7Pg";
 let lat = 52.63;
 let lon = 1.29;
 let theDate = "2018-01-01";
-let dim = 0.025;
+let dim = 0.1;
 
 // this function will get the information from our API
 async function getData() {
