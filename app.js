@@ -1,5 +1,6 @@
 const loadingDiv = document.querySelector(".loading");
 const image = document.querySelector("img");
+const btn = document.querySelector("button");
 let loading = false;
 const api_key = "C0bJ5f1kNkzkcjZ0HVWI2Gq3T98aYh6PkcPvp7Pg";
 let lat = 52.63;
@@ -27,7 +28,11 @@ getData();
 function toggleLoading() {
   image.classList.toggle("hidden");
   loadingDiv.classList.toggle("hidden");
+  btn.textContent == "Go!"
+    ? (btn.textContent = "Going...")
+    : (btn.textContent = "Go!");
 }
+
 function handleSubmit(event) {
   event.preventDefault();
   lat = event.target.lat.value;
